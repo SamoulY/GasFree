@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website with PHAROS Faucet</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f5ff 0%, #e6f0ff 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            color: #2c82e5;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #4a5568;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(44, 130, 229, 0.1);
+            border: 1px solid rgba(44, 130, 229, 0.1);
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        
+        <div class="card">
+            <h2 style="color: #2c82e5;">PHAROS Atlantic Testnet Faucet</h2>
+            <p>This website has integrated the PHAROS faucet. Click the blue button in the bottom-right corner to get free PHRS test tokens!</p>
+            <p>No gas fees required - the server pays for all transactions.</p>
+        </div>
+        
+        <div class="card">
+            <h3>How to use:</h3>
+            <ol>
+                <li>Click the floating button</li>
+                <li>Connect your MetaMask wallet</li>
+                <li>Switch to PHAROS Atlantic Testnet</li>
+                <li>Watch a short ad (5 seconds)</li>
+                <li>Claim 0.01 PHRS gas-free!</li>
+            </ol>
+        </div>
+    </div>
+    
+    <!-- 添加这一行即可嵌入PHAROS水龙头 -->
+    <script src="pharos-faucet-plugin.js"></script>
+    
+    <!-- 或者自定义配置 -->
+    <!-- 
+    <script src="pharos-faucet-plugin.js" 
+        data-contract="0x171026a74CE726CD802fFC2e519036c22aa7F56b"
+        data-server="http://localhost:3000"
+        data-position="bottom-right"
+        data-text="Get Free PHRS"
+        data-color="#2c82e5">
+    </script>
+    -->
+</body>
+</html>
