@@ -1,2 +1,7 @@
 # GasFree
- GasFree - The Universal Gas Abstraction Layer
+GasFree - The Universal Gas Abstraction Layer
+
+#Fast run:
+python3 app.py
+python3 -m http.server 80
+
